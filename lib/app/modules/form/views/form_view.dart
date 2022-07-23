@@ -10,13 +10,13 @@ class FormView extends GetView<FormController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FormView'),
+        title: const Text('Post your ticket'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          'FormView is working',
-          style: TextStyle(fontSize: 20),
+      body: Form(
+        key: controller.formKey,
+        child: Column(
+          children: [],
         ),
       ),
     );

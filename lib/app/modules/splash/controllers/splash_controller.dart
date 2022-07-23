@@ -36,7 +36,7 @@ class SplashController extends GetxController {
 
   void loadApp() {
     Future.delayed(const Duration(milliseconds: 5000), () {
-      Get.toNamed(Routes.FORM);
+      Get.offAndToNamed(Routes.FORM);
     });
   }
 }

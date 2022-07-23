@@ -11,6 +11,9 @@ void main() {
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       theme: ThemeData.light().copyWith(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.red,
+        ),
         textTheme: const TextTheme(
           headline1: TextStyle(
             fontFamily: 'Consolas',
