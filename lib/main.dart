@@ -14,17 +14,24 @@ void main() {
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.red,
         ),
-        textTheme: const TextTheme(
-          headline1: TextStyle(
-            fontFamily: 'Consolas',
-            fontSize: 42,
-          ),
-          subtitle1: TextStyle(
-            fontFamily: 'Consolas',
-            fontStyle: FontStyle.italic,
-            fontSize: 36,
+        inputDecorationTheme: InputDecorationTheme(
+          labelStyle: TextStyle(
+            color: Colors.black,
           ),
         ),
+        textTheme: const TextTheme(
+            headline1: TextStyle(
+              fontFamily: 'Consolas',
+              fontSize: 42,
+            ),
+            subtitle1: TextStyle(
+              color: Colors.black,
+            ),
+            subtitle2: TextStyle(
+              fontFamily: 'Consolas',
+              fontStyle: FontStyle.italic,
+              fontSize: 36,
+            )),
       ),
     ),
   );

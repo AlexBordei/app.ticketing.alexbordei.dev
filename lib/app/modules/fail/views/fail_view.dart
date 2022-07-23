@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/success_controller.dart';
+import '../controllers/fail_controller.dart';
 
-class SuccessView extends GetView<SuccessController> {
-  const SuccessView({Key? key}) : super(key: key);
+class FailView extends GetView<FailController> {
+  const FailView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.green,
+        color: Colors.red,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
-              'Your ticket has been posted succesfully!',
+              'There was an error posting your ticket!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
@@ -25,7 +25,7 @@ class SuccessView extends GetView<SuccessController> {
             Center(
                 child: Container(
               child: Icon(
-                Icons.check,
+                Icons.close,
                 size: 200,
                 color: Colors.white,
               ),

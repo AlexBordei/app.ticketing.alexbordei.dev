@@ -5,8 +5,8 @@ import '../controllers/success_controller.dart';
 class SuccessBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<SuccessController>(
-      () => SuccessController(),
+    Get.put<SuccessController>(
+      SuccessController(),
     );
   }
 }

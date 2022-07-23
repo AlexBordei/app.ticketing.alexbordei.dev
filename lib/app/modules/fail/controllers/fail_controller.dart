@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 import 'package:ticketing_app/app/routes/app_pages.dart';
 
-class SuccessController extends GetxController {
-  //TODO: Implement SuccessController
+class FailController extends GetxController {
+  //TODO: Implement FailController
 
   final count = 0.obs;
   @override

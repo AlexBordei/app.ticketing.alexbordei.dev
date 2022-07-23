@@ -62,7 +62,7 @@ class SplashView extends GetView<SplashController> {
                             ),
                             Text(
                               'ticketing',
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.subtitle2,
                             )
                           ],
                         ),
